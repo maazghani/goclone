@@ -1,0 +1,15 @@
+{
+  "name": "Dev Container",
+  "image": "ghcr.io/maazghani/dotfiles:latest",
+  "runArgs": [
+    "--privileged",
+    "--network=host",
+    "-v",
+    "/var/run/docker.sock:/var/run/docker.sock",
+    "--device=/dev/net/tun"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/zsh"
+  },
+  "extensions": ["github.copilot"]
+}
