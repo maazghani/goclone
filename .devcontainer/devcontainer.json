@@ -8,8 +8,8 @@
     "/var/run/docker.sock:/var/run/docker.sock",
     "--device=/dev/net/tun"
   ],
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/zsh"
+  "customizations": {
+    "extensions": ["github.copilot"]
   },
-  "extensions": ["github.copilot"]
+  "postCreateCommand": "chmod +x post-start.sh"
 }
